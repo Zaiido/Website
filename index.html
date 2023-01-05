@@ -83,6 +83,49 @@
                 <img src="assets/avatar-1.jpg" alt="Profile Image">
                 <div class="green-bubble"></div>
             </div>
+            <div class="profile-dropdown">
+                <div class="profile-info">
+                    <div class="profile">
+                        <img src="assets/avatar-1.jpg" alt="Profile Image">
+                        <div class="green-bubble"></div>
+                    </div>
+                    <div class="name-email">
+                        <span>Annette Black</span>
+                        <span class="email">annette@geeksui.com</span>
+                    </div>
+                </div>
+                <hr>
+                <div class="features">
+                    <div>
+                        <img src="assets/user-profile.png" alt="Profile Icon">
+                        Profile
+                    </div>
+                    <div>
+                        <img src="assets/star.png" alt="Star Icon">
+                        Subscription
+                    </div>
+                    <div>
+                        <img src="assets/gear.png" alt="Profile Icon">
+                        Settings
+                    </div>
+                </div>
+                <hr>
+                <div class="features">
+                    <div>
+                        <img src="assets/log-out.png" alt="Profile Icon">
+                        Sign Out
+                    </div>
+                </div>
+            </div>
+            <div class="hamburger-menu">
+                <img src="assets/menu.png" alt="Menu Icon">
+            </div>
+            <div class="menu-dropdown hidden">
+                <a href="" class="menu-link">Browse</a>
+                <a href="" class="menu-link">Landings</a>
+                <a href="" class="menu-link">Pages</a>
+                <a href="" class="menu-link">Accounts</a>
+            </div>
         </div>
     </header>
 
@@ -92,38 +135,44 @@
                 <h2>Welcome Web Students!</h2>
                 <h3>Hand-picked Instructor and expertly crafted <br> courses, designed for the modern students and <br>
                     entrepreneur.</h3>
-                <button class="browse-btn">Browse Courses</button>
-                <button class="instructor-btn">Are You Instructor?</button>
+                <div class="main-buttons">
+                    <button class="browse-btn">Browse Courses</button>
+                    <button class="instructor-btn">Are You Instructor?</button>
+                </div>
             </div>
-            <img src="assets/hero-img.png" alt="Hero Image">
+            <div class="main-img">
+                <img src="assets/hero-img.png" alt="Hero Image">
+            </div>
         </div>
 
         <div class="secondary-container">
-            <div class="description">
-                <div class="description-logo">
-                    <img src="assets/video-camera (1).png" alt="Camera Icon">
+            <div class="container">
+                <div class="description">
+                    <div class="description-logo">
+                        <img src="assets/video-camera (1).png" alt="Camera Icon">
+                    </div>
+                    <div class="description-content">
+                        <h3>30,000 online courses</h3>
+                        <h3>Enjoy a variety of fresh topics</h3>
+                    </div>
                 </div>
-                <div class="description-content">
-                    <h3>30,000 online courses</h3>
-                    <h3>Enjoy a variety of fresh topics</h3>
+                <div class="description">
+                    <div class="description-logo">
+                        <img src="assets/user (1).png" alt="User Icon">
+                    </div>
+                    <div class="description-content">
+                        <h3>Expert instruction</h3>
+                        <h3>Find the right instructor for you</h3>
+                    </div>
                 </div>
-            </div>
-            <div class="description">
-                <div class="description-logo">
-                    <img src="assets/user (1).png" alt="User Icon">
-                </div>
-                <div class="description-content">
-                    <h3>Expert instruction</h3>
-                    <h3>Find the right instructor for you</h3>
-                </div>
-            </div>
-            <div class="description">
-                <div class="description-logo">
-                    <img src="assets/time.png" alt="Clock Logo">
-                </div>
-                <div class="description-content">
-                    <h3>Lifetime access</h3>
-                    <h3>Learn on your schedule</h3>
+                <div class="description">
+                    <div class="description-logo">
+                        <img src="assets/time.png" alt="Clock Logo">
+                    </div>
+                    <div class="description-content">
+                        <h3>Lifetime access</h3>
+                        <h3>Learn on your schedule</h3>
+                    </div>
                 </div>
             </div>
         </div>
@@ -132,7 +181,7 @@
         <div class="courses-main-container">
             <h2>Recommended to you</h2>
             <div class="courses-container">
-                <div class="arrow">
+                <div class="arrow left">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M15.535 3.515L7.05005 12L15.535 20.485L16.95 19.071L9.87805 12L16.95 4.929L15.535 3.515Z"
@@ -142,23 +191,23 @@
                 <div class="cards-container">
                     <div class="card">
                         <div class="img">
-                            <img src="assets/course-graphql.jpg" alt="">
+                            <img src="assets/course-graphql.jpg" alt="Course Image">
                         </div>
                         <div class="card-content">
                             <h3>GraphQL: Introduction to graphQL for beginners</h3>
                             <div class="time-difficulty">
-                                <div class="time">
-                                    <img src="assets/time.png" alt="">
-                                    2h 40m
+                                <div>
+                                    <img src="assets/time-gray.png" alt="Time Icon">
+                                    <span> 2h 40m</span>
                                 </div>
-                                <div class="difficulty">
-                                    <!-- <img src="assets/time.png" alt=""> -->
-                                    Advance
+                                <div>
+                                    <img src="assets/diff-advance.png" alt="Difficulty Icon">
+                                    <span> Advance</span>
                                 </div>
                             </div>
                             <div class="rating">
                                 <img src="assets/stars.png" alt="Stars">
-                                5.0 <span>(1500)</span>
+                                5.0 <span>(1,500)</span>
                             </div>
                             <div class="price">
                                 $500 <span>$600</span>
@@ -166,27 +215,108 @@
                         </div>
                         <hr class="separator">
                         <div class="instructor-data">
-                            <img src="assets/avatar-5.jpg" alt="Avatar">
+                            <img class="avatar" src="assets/avatar-5.jpg" alt="Avatar">
                             <p>Brooklin Simmons</p>
+                            <img class="ribbon" src="assets/saved.png" alt="Save">
                         </div>
                     </div>
                     <div class="card">
                         <div class="img">
-                            <img src="assets/course-javascript.jpg" alt="">
+                            <img src="assets/course-javascript.jpg" alt="Course Image">
+                        </div>
+                        <div class="card-content">
+                            <h3>A Complete Beginner's Guide to JavaScript</h3>
+                            <div class="time-difficulty">
+                                <div>
+                                    <img src="assets/time-gray.png" alt="Time Icon">
+                                    <span> 4h 10m</span>
+                                </div>
+                                <div>
+                                    <img src="assets/diff-advance.png" alt="Difficulty Icon">
+                                    <span> Advance</span>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <img src="assets/stars-4.png" alt="Stars">
+                                4.0 <span>(7,500)</span>
+                            </div>
+                            <div class="price">
+                                $700 <span>$850</span>
+                            </div>
+                        </div>
+                        <hr class="separator">
+                        <div class="instructor-data">
+                            <img class="avatar" src="assets/avatar-1.jpg" alt="Avatar">
+                            <p>Jenny Wilson</p>
+                            <img class="ribbon" src="assets/saved.png" alt="Save">
                         </div>
                     </div>
                     <div class="card">
                         <div class="img">
-                            <img src="assets/course-node.jpg" alt="">
+                            <img src="assets/course-node.jpg" alt="Course Image">
+                        </div>
+                        <div class="card-content">
+                            <h3>Beginning Node.js, Express & MongoDB Development</h3>
+                            <div class="time-difficulty">
+                                <div>
+                                    <img src="assets/time-gray.png" alt="Time Icon">
+                                    <span> 2h 00m</span>
+                                </div>
+                                <div class="difficulty intermediate">
+                                    <img src="assets/diff-gray.png" alt="Difficulty Icon">
+                                    <img src="assets/diff-intermediate.png" alt="Difficulty Icon">
+                                    <span> Intermediate</span>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <img src="assets/stars-4.png" alt="Stars">
+                                4.0 <span>(15,700)</span>
+                            </div>
+                            <div class="price">
+                                $800 <span>$950</span>
+                            </div>
+                        </div>
+                        <hr class="separator">
+                        <div class="instructor-data">
+                            <img class="avatar" src="assets/avatar-3.jpg" alt="Avatar">
+                            <p>Sina Ray</p>
+                            <img class="ribbon" src="assets/saved.png" alt="Save">
                         </div>
                     </div>
                     <div class="card">
                         <div class="img">
-                            <img src="assets/course-laravel.jpg" alt="">
+                            <img src="assets/course-laravel.jpg" alt="Course Image">
+                        </div>
+                        <div class="card-content">
+                            <h3>Laravel: The Ultimate Beginner's Guide to Learn</h3>
+                            <div class="time-difficulty">
+                                <div>
+                                    <img src="assets/time-gray.png" alt="Time Icon">
+                                    <span> 1h 00m</span>
+                                </div>
+                                <div class="difficulty beginner">
+                                    <img src="assets/diff-gray.png" alt="Difficulty Icon">
+                                    <img src="assets/diff-easy.png" alt="Difficulty Icon">
+                                    <span> Beginner</span>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <img src="assets/stars-4.png" alt="Stars">
+                                4.0 <span>(2,500)</span>
+                            </div>
+                            <div class="price">
+                                $170 <span>$220</span>
+                            </div>
+                        </div>
+                        <hr class="separator">
+                        <div class="instructor-data">
+                            <img class="avatar" src="assets/avatar-7.jpg" alt="Avatar">
+                            <p>Sobo Rikhan</p>
+                            <img class="ribbon" src="assets/saved.png" alt="Save">
                         </div>
                     </div>
                 </div>
-                <div class="arrow">
+                <div class="arrow right">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M8.46495 20.485L16.95 12L8.46495 3.515L7.04995 4.929L14.122 12L7.04995 19.071L8.46495 20.485Z"
@@ -196,6 +326,332 @@
             </div>
         </div>
     </section>
+    <section class="courses">
+        <div class="courses-main-container">
+            <h2>Most Popular</h2>
+            <div class="courses-container">
+                <div class="arrow left">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15.535 3.515L7.05005 12L15.535 20.485L16.95 19.071L9.87805 12L16.95 4.929L15.535 3.515Z"
+                            fill="#2E3A59"></path>
+                    </svg>
+                </div>
+                <div class="cards-container">
+                    <div class="card">
+                        <div class="img">
+                            <img src="assets/course-html.jpg" alt="Course Image">
+                        </div>
+                        <div class="card-content">
+                            <h3>HTML Full Course - Build a Website Tutorial</h3>
+                            <div class="time-difficulty">
+                                <div>
+                                    <img src="assets/time-gray.png" alt="Time Icon">
+                                    <span> 3h 16m</span>
+                                </div>
+                                <div class="difficulty beginner">
+                                    <img src="assets/diff-gray.png" alt="Difficulty Icon">
+                                    <img src="assets/diff-easy.png" alt="Difficulty Icon">
+                                    <span> Beginner</span>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <img src="assets/stars-4.png" alt="Stars">
+                                4.0 <span>(1,600)</span>
+                            </div>
+                            <div class="price">
+                                $550 <span>$700</span>
+                            </div>
+                        </div>
+                        <hr class="separator">
+                        <div class="instructor-data">
+                            <img class="avatar" src="assets/avatar-4.jpg" alt="Avatar">
+                            <p>Miston Wilson</p>
+                            <img class="ribbon" src="assets/saved.png" alt="Save">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img">
+                            <img src="assets/course-javascript.jpg" alt="Course Image">
+                        </div>
+                        <div class="card-content">
+                            <h3>A Complete Beginner's Guide to JavaScript</h3>
+                            <div class="time-difficulty">
+                                <div>
+                                    <img src="assets/time-gray.png" alt="Time Icon">
+                                    <span> 4h 10m</span>
+                                </div>
+                                <div>
+                                    <img src="assets/diff-advance.png" alt="Difficulty Icon">
+                                    <span> Advance</span>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <img src="assets/stars-4.png" alt="Stars">
+                                4.0 <span>(7,500)</span>
+                            </div>
+                            <div class="price">
+                                $700 <span>$850</span>
+                            </div>
+                        </div>
+                        <hr class="separator">
+                        <div class="instructor-data">
+                            <img class="avatar" src="assets/avatar-1.jpg" alt="Avatar">
+                            <p>Jenny Wilson</p>
+                            <img class="ribbon" src="assets/saved.png" alt="Save">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img">
+                            <img src="assets/course-node.jpg" alt="Course Image">
+                        </div>
+                        <div class="card-content">
+                            <h3>Beginning Node.js, Express & MongoDB Development</h3>
+                            <div class="time-difficulty">
+                                <div>
+                                    <img src="assets/time-gray.png" alt="Time Icon">
+                                    <span> 2h 00m</span>
+                                </div>
+                                <div class="difficulty intermediate">
+                                    <img src="assets/diff-gray.png" alt="Difficulty Icon">
+                                    <img src="assets/diff-intermediate.png" alt="Difficulty Icon">
+                                    <span>Intermediate</span>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <img src="assets/stars-4.png" alt="Stars">
+                                4.0 <span>(15,700)</span>
+                            </div>
+                            <div class="price">
+                                $800 <span>$950</span>
+                            </div>
+                        </div>
+                        <hr class="separator">
+                        <div class="instructor-data">
+                            <img class="avatar" src="assets/avatar-3.jpg" alt="Avatar">
+                            <p>Sina Ray</p>
+                            <img class="ribbon" src="assets/saved.png" alt="Save">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img">
+                            <img src="assets/course-react.jpg" alt="Course Image">
+                        </div>
+                        <div class="card-content">
+                            <h3>How to easily create a website with React</h3>
+                            <div class="time-difficulty">
+                                <div>
+                                    <img src="assets/time-gray.png" alt="Time Icon">
+                                    <span> 3h 55m</span>
+                                </div>
+                                <div>
+                                    <img src="assets/diff-advance.png" alt="Difficulty Icon">
+                                    <span>Advance</span>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <img src="assets/stars.png" alt="Stars">
+                                5.0 <span>(1,500)</span>
+                            </div>
+                            <div class="price">
+                                $600 <span>$750</span>
+                            </div>
+                        </div>
+                        <hr class="separator">
+                        <div class="instructor-data">
+                            <img class="avatar" src="assets/avatar-2.jpg" alt="Avatar">
+                            <p>April Noms</p>
+                            <img class="ribbon" src="assets/saved.png" alt="Save">
+                        </div>
+                    </div>
+                </div>
+                <div class="arrow right">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M8.46495 20.485L16.95 12L8.46495 3.515L7.04995 4.929L14.122 12L7.04995 19.071L8.46495 20.485Z"
+                            fill="#2E3A59"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="courses">
+        <div class="courses-main-container">
+            <h2>Trending</h2>
+            <div class="courses-container">
+                <div class="arrow left">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15.535 3.515L7.05005 12L15.535 20.485L16.95 19.071L9.87805 12L16.95 4.929L15.535 3.515Z"
+                            fill="#2E3A59"></path>
+                    </svg>
+                </div>
+                <div class="cards-container">
+                    <div class="card">
+                        <div class="img">
+                            <img src="assets/course-gatsby.jpg" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h3>Revolutionize how you build the web</h3>
+                            <div class="time-difficulty">
+                                <div>
+                                    <img src="assets/time-gray.png" alt="Time Icon">
+                                    <span> 1h 46m</span>
+                                </div>
+                                <div class="difficulty intermediate">
+                                    <img src="assets/diff-gray.png" alt="Difficulty Icon">
+                                    <img src="assets/diff-intermediate.png" alt="Difficulty Icon">
+                                    <span>Intermediate</span>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <img src="assets/stars.png" alt="Stars">
+                                5.0 <span>(16,500)</span>
+                            </div>
+                            <div class="price">
+                                $800 <span>$850</span>
+                            </div>
+                        </div>
+                        <hr class="separator">
+                        <div class="instructor-data">
+                            <img class="avatar" src="assets/avatar-6.jpg" alt="Avatar">
+                            <p>Jenny Wilson</p>
+                            <img class="ribbon" src="assets/saved.png" alt="Save">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img">
+                            <img src="assets/course-html.jpg" alt="Course Image">
+                        </div>
+                        <div class="card-content">
+                            <h3>HTML Full Course - Build a Website Tutorial</h3>
+                            <div class="time-difficulty">
+                                <div>
+                                    <img src="assets/time-gray.png" alt="Time Icon">
+                                    <span> 3h 16m</span>
+                                </div>
+                                <div class="difficulty beginner">
+                                    <img src="assets/diff-gray.png" alt="Difficulty Icon">
+                                    <img src="assets/diff-easy.png" alt="Difficulty Icon">
+                                    <span> Beginner</span>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <img src="assets/stars-4.png" alt="Stars">
+                                4.0 <span>(1,600)</span>
+                            </div>
+                            <div class="price">
+                                $550 <span>$700</span>
+                            </div>
+                        </div>
+                        <hr class="separator">
+                        <div class="instructor-data">
+                            <img class="avatar" src="assets/avatar-4.jpg" alt="Avatar">
+                            <p>Miston Wilson</p>
+                            <img class="ribbon" src="assets/saved.png" alt="Save">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img">
+                            <img src="assets/course-node.jpg" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h3>Beginning Node.js, Express & MongoDB Development</h3>
+                            <div class="time-difficulty">
+                                <div>
+                                    <img src="assets/time-gray.png" alt="Time Icon">
+                                    <span> 2h 00m</span>
+                                </div>
+                                <div class="difficulty intermediate">
+                                    <img src="assets/diff-gray.png" alt="Difficulty Icon">
+                                    <img src="assets/diff-intermediate.png" alt="Difficulty Icon">
+                                    <span>Intermediate</span>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <img src="assets/stars-4.png" alt="Stars">
+                                4.0 <span>(15,700)</span>
+                            </div>
+                            <div class="price">
+                                $800 <span>$950</span>
+                            </div>
+                        </div>
+                        <hr class="separator">
+                        <div class="instructor-data">
+                            <img class="avatar" src="assets/avatar-3.jpg" alt="Avatar">
+                            <p>Sina Ray</p>
+                            <img class="ribbon" src="assets/saved.png" alt="Save">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img">
+                            <img src="assets/course-laravel.jpg" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h3>Laravel: The Ultimate Beginner's Guide to Learn</h3>
+                            <div class="time-difficulty">
+                                <div>
+                                    <img src="assets/time-gray.png" alt="Time Icon">
+                                    <span> 1h 00m</span>
+                                </div>
+                                <div class="difficulty beginner">
+                                    <img src="assets/diff-gray.png" alt="Difficulty Icon">
+                                    <img src="assets/diff-easy.png" alt="Difficulty Icon">
+                                    <span> Beginner</span>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <img src="assets/stars-4.png" alt="Stars">
+                                4.0 <span>(2,500)</span>
+                            </div>
+                            <div class="price">
+                                $170 <span>$220</span>
+                            </div>
+                        </div>
+                        <hr class="separator">
+                        <div class="instructor-data">
+                            <img class="avatar" src="assets/avatar-7.jpg" alt="Avatar">
+                            <p>Sobo Rikhan</p>
+                            <img class="ribbon" src="assets/saved.png" alt="Save">
+                        </div>
+                    </div>
+                </div>
+                <div class="arrow right">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M8.46495 20.485L16.95 12L8.46495 3.515L7.04995 4.929L14.122 12L7.04995 19.071L8.46495 20.485Z"
+                            fill="#2E3A59"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="copyright">
+                <span>© 2022 Geeks. All Rights Reserved.</span>
+            </div>
+            <div class="website-links">
+                <a href="">Privacy</a>
+                <a href="">Terms</a>
+                <a href="">Feedback</a>
+                <a href="">Support</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        let menuNode = document.querySelector(".hamburger-menu")
+        const hamburgerMenu = function () {
+            let menuDropdownNode = document.querySelector(".hamburger-menu + .menu-dropdown.hidden")
+            if (menuDropdownNode != null) {
+                menuDropdownNode.classList.remove("hidden")
+            } else {
+                document.querySelector(".hamburger-menu + .menu-dropdown").classList.add("hidden")
+            }
+        }
+
+        menuNode.addEventListener("click", hamburgerMenu)
+    </script>
 </body>
 
 </html>
